@@ -241,3 +241,225 @@ for x in range(5):
 print(lst)
 
 
+
+# Use `enumerate()` when you need both the index and the value while looping through a sequence.
+# Important concept : enumerate() returns an enumerate object that produces index-value pairs. 
+# More precisely, enumerate() returns an enumerate object, which is an iterator.
+colors = ["Red", "Green", "Blue"]
+for index, color in enumerate(colors):
+    print(index, color)
+
+
+
+fruits = ["Apple", "Banana", "Mango"]
+for index, fruit in enumerate(fruits):
+    print(index, fruit)
+print('===== 1 ====')
+for i in enumerate(fruits): # i contains the entire tuple produced by enumerate().
+    print(i)
+for i in enumerate(fruits):
+    print(i[0])
+for i in enumerate(fruits):
+    print(i[1])
+print('===== 2 ====')
+for fruit in enumerate(fruits):
+    print(index, fruit)     # as index above is use, so index value will be printed again and again,
+#                           # if it is not define earlier, it will throw an error
+
+c = ["Apple", "Banana", "Mango", "Strawberry"]
+for i in range(len(c)):
+    print(i, c[i])
+
+
+
+
+# Use `zip()` to iterate over two or more sequences simultaneously, pairing their corresponding elements together.
+names = ["Ali", "Ahmed", "Sara"]
+marks = [80, 90, 95]
+for name, mark in zip(names, marks):
+    print(name, mark)
+
+
+
+student = {
+    "name": "Ali",
+    "age": 20
+}
+for key, value in student.items():
+    print(key, value)
+
+
+
+data = ""
+while data != "exit":
+    data = input("Enter command: ")
+
+
+
+
+
+while True:
+    choice = input("Enter q to quit: ")
+    if choice == "q":
+        break
+
+
+
+
+# The `pass` statement is used when you want to leave a block of code empty without causing an error.
+for i in range(5):
+    if i == 2:
+        pass
+    print(i)
+
+
+
+num = 5
+for i in range(1, 11):
+    print(num, "x", i, "=", num * i)
+
+
+
+
+n = 5
+fact = 1
+while n > 0:
+    fact *= n
+    n -= 1
+print(fact)
+
+
+
+
+def greet(name):  # name is parameter 
+    print("Hello", name) 
+greet("Ali")   # 'ALi' is argument
+
+
+
+
+def greet(name): 
+    return "Hello " + name 
+print(greet("Umer"))
+
+
+
+
+
+def upp(val:str)->str:
+    return val.upper()
+print(upp("why are you here"))
+
+
+def is_positive(num): 
+    return num > 0 
+print(is_positive(10)) 
+print(is_positive(-5))
+
+
+
+
+def total(numbers): 
+    return sum(numbers) 
+print(total([10, 20, 30]))
+
+
+
+def square_list(nums):
+    result = []         # creating an empty list
+    for n in nums:
+        result.append(n * n)
+    return result
+numbers = [1, 2, 3, 4]
+print(square_list(numbers))
+
+
+
+
+def first_item(data): 
+    return data[0] 
+print(first_item((100, 200, 300)))
+
+
+
+
+def student(): 
+    return ("Ali", 21, "CS") 
+print(student())
+
+
+
+
+def get_name(student): 
+    return student["name"] 
+data = {"name": "Ahmed", "age": 20} 
+print(get_name(data))
+
+
+
+
+def create_student(): 
+    return { "name": "Sara", "age": 22 } 
+print(create_student())
+
+
+
+
+def student_info(name, age, cgpa): 
+    return f"{name} is {age} years old and has CGPA {cgpa}" 
+print(student_info("Ali", 21, 3.7))
+
+
+
+
+def calculate(a, b): 
+    return a + b, a - b, a * b 
+sum_val, diff_val, prod_val = calculate(10, 5) 
+print(sum_val) 
+print(diff_val) 
+print(prod_val)
+
+
+
+# - Functions without `return` automatically return `None`.
+def show_message(): 
+    print("Python Function") 
+result = show_message() 
+print(result)
+
+
+
+
+# finding factorial, computing x power n, even or odd checker, thrid largest
+
+def largest(a, b, c):
+    if a >= b and a >= c:
+        return a
+    elif b >= a and b >= c:
+        return b
+    else:
+        return c
+print(largest(10, 25, 15))
+print(largest(50, 20, 30))
+print(largest(7, 7, 3))
+
+
+
+
+
+name = "Ali"
+def show():
+    name = 'Ahmad'
+    print(name)
+show()
+print(name)
+
+
+
+name = "atif"
+def n():
+    # print(name)
+    name = "Ali"
+    print(name)
+n()
+
