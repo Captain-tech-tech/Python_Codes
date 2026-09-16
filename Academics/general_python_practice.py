@@ -142,3 +142,102 @@ print("marks" not in student)
 # Membership operators (in, not in) make searching within collections simple and readable.
 # Python's is and in operators have no direct equivalents in C/C++, making them unique and widely used features of Python.
 
+
+
+
+
+# value_if_true if condition else value_if_false
+age = 17
+status = "Adult" if age >= 18 else "Minor"
+print(status)
+
+
+
+
+day = 3
+match day:
+    case 1:
+        print("Monday")
+    case 2:
+        print("Tuesday")
+    case 3:
+        print("Wednesday")
+    case _:
+        print("Invalid Day")
+
+
+
+
+match day:
+    case 1:
+        print("Monday")
+    case 2:
+        print("Tuesday")
+    case _:    #  _ is used for default case
+        print("Invalid")
+
+
+day = "Saturday"
+
+match day:
+    case "Saturday" | "Sunday":
+        print("Weekend")
+    case _:
+        print("Weekday")
+
+day = "Saturday"
+
+match day:
+    case "Saturday" | 1:
+        print("Weekend")
+    case _:
+        print("Weekday")
+
+
+
+
+
+fruits = ["Apple", "Banana", "Orange"]
+for fruit in fruits:
+    print(fruit)
+
+
+
+
+for i in range(5):
+    print(i)
+
+
+
+count = 1
+while count <= 5:
+    print(count)
+    count += 1
+
+# break and continue    
+
+
+
+for i in range(3):
+    for j in range(2):
+        print(i, j)
+
+
+
+
+for ch in "Python":
+    print(ch)
+
+
+
+
+# List Comprehension (Compact form of for)
+squares = [x*x for x in range(5)]
+print(squares)
+print("------Equivalent Detailed/shortcut form of above -------")
+lst = []
+for x in range(5):
+    lst.append(x*x)
+print(lst)
+
+
