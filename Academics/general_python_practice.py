@@ -530,6 +530,54 @@ def func(a, b=10):
 
 
 
+# A **lambda function** is a small anonymous function that can have any number of arguments but only one 
+# expression. Lambda functions are mainly used for small expressions that produce a value.
+# lambda arguments: expression
+
+
+square = lambda x: x * x
+print(square(5))
+
+
+add = lambda a, b: a + b
+print(add(3, 4))
+
+
+sq = lambda x,y=7,z=5,t=2,l=4: x+y+z+t+l
+print(sq(3))
+
+
+
+# `map()` applies a function to each element of an iterable (like a list) and returns the transformed values.
+# map(function, iterable)
+
+
+numbers = [1, 2, 3, 4]
+squares = list(map(lambda x: x * x, numbers))
+print(squares)
+print(numbers)
+
+
+
+# Equivalent Code without Lambda
+numbers = [1, 2, 3, 4]
+def square(x):
+    return x * x
+squares = list(map(square, numbers))
+print(squares)
+print(numbers)
+
+
+
+n1 = [34,56,23,45,23,35,34]
+def square(a):
+    return a*a
+s = list(map(square, n1))
+s
+
+
+
+
 
 
 
