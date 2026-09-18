@@ -656,3 +656,162 @@ print(__doc__)
 
 
 
+# LISTS in Python
+
+numbers = [10, 20, 30, 40, 50]
+print(numbers)
+
+student = ["Ali", 20, 3.8, True]
+print(student)
+
+my_list = []
+print(my_list)
+
+numbers = [1, 2, 3, 4, 5]
+numbers
+
+names = ["Ali", "Sara", "Ahmed"]
+names
+
+data = [10, "Python", 3.14, True]
+data
+
+
+names = ["Ali", "Sara", "Ahmed"]
+
+print(names[0])
+print(names[1])
+print(names[2])
+
+
+names = ["Ali", "Sara", "Ahmed"]
+
+print(names[-1])
+print(names[-2])
+
+
+numbers = [10, 20, 30, 40, 50, 60]
+
+print(numbers[1:4])
+print(numbers[:3])
+print(numbers[3:])
+print(numbers[::2])
+
+
+numbers = [10, 20, 30]
+numbers[1] = 99
+print(numbers)
+
+
+numbers = [10, 20, 30, 40]
+print(len(numbers))
+
+
+
+list1 = [1, 2]
+list2 = [3, 4]
+result = list1 + list2
+print(result)
+
+
+numbers = [1, 2]
+print(numbers * 3)
+
+
+
+numbers = [10, 20, 30]
+print(20 in numbers)
+print(100 in numbers)
+
+
+
+
+numbers = [10, 20, 30]
+
+numbers.append(40)
+print(numbers)
+
+
+
+
+numbers = [10, 20, 30]
+
+numbers.insert(1, 15)
+print(numbers)
+
+
+
+numbers = [10, 20, 30, 20]
+
+numbers.remove(20)
+
+print(numbers)
+
+
+
+numbers = [10, 20, 30]
+numbers.pop()
+print(numbers)
+
+
+
+
+numbers = [40, 10, 30, 20]
+numbers.sort()
+print(numbers)
+
+
+
+
+numbers = [10, 20, 30]
+numbers.reverse()
+print(numbers)
+
+
+
+numbers = [10, 20, 30]
+numbers.clear()
+print(numbers)
+
+
+
+numbers = [10, 20, 30, 40]
+for n in numbers:
+    print(n)
+
+
+
+numbers = [10, 20, 30, 40]
+for n in numbers:
+    print(n, numbers[n])
+
+
+
+
+
+numbers = [10, 20, 30]
+for i in range(len(numbers)):
+    print(i, numbers[i])
+
+
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(matrix[1][2])
+
+
+
+numbers = [10, 20, 30, 40, 50]
+
+numbers.append(60)
+
+print(numbers)
+
+
+
+
+
