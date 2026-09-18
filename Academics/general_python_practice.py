@@ -580,6 +580,78 @@ s
 
 
 
+# `filter()` selects elements from an iterable that satisfy a given condition and returns only those elements.
+# filter(condition, iterable)
+# `filter(lambda x: x % 2 == 0, numbers)` keeps only the even numbers.
+
+numbers = [1, 2, 3, 4, 5, 6]
+evens = list(filter(lambda x: x % 2 == 0, numbers))
+print(evens)
+
+
+
+
+# Equivalent Code without Lambda
+numbers = [1, 2, 3, 4, 5, 6]
+def is_even(x):
+    return x % 2 == 0
+evens = list(filter(is_even, numbers))
+print(evens)
+
+
+
+
+
+
+def add(a, b):
+    """
+    Returns the sum of two numbers.
+    """
+    return a + b
+print(add.__doc__)
+
+
+
+
+
+
+def divide(a, b):
+    """
+    Divide two numbers.
+
+    Parameters:
+    a -- numerator
+    b -- denominator
+
+    Returns:
+    Division result
+    """
+    return a / b
+print(divide.__doc__)
+
+
+
+
+
+class Student:
+    """
+    Represents a student.
+    """
+    def __init__(self, name):
+        self.name = name
+print(Student.__doc__)
+
+
+
+
+
+
+"""
+This module demonstrates basic mathematical functions.
+"""
+def square(x):
+    return x * x
+print(__doc__)
 
 
 
