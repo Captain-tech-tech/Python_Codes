@@ -463,3 +463,76 @@ def n():
     print(name)
 n()
 
+
+
+
+
+
+count = 10
+def increase():
+    global count
+    count += 1
+increase()
+print(count)
+
+
+
+# Python doesn't allow the same name to be local and global within the same function.
+count = 10
+def increase():
+    count = 20       # local variable
+    print("Local:", count)
+    # global count
+    print(count)
+
+
+
+
+
+x = "Global"
+def outer():
+    x = "Enclosing"
+    def inner():
+        x = "Local"
+        print(x)
+    inner()
+    print(x)
+outer()
+print(x)
+
+
+
+
+
+# Python searches variables in the following order:
+# LEGB Rule L → E → G → B
+# Local → Enclosing → Global → Built-in 
+# If Python can't find the name in any of these four scopes, you get a `NameError`.
+
+
+
+
+
+def power(base, exponent=2):
+    return base ** exponent
+print(power(5))
+print(power(5, 3))
+
+
+
+# Non-default parameters must come before default parameters.
+# Correct
+def func(a, b=10):
+    pass
+# Incorrect
+# def func(a=10, b):
+#     pass
+
+
+
+
+
+
+
+
+
