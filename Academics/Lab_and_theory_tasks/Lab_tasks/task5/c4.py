@@ -6,8 +6,8 @@ def is_pythagorean(a,b,c):
 # finding number of ordered triplets and printing them as well
 n=0
 for c in range(1, 31):
-    for b in range(1, c+1):
-        for a in range(1, b+1):
+    for b in range(1, 31):
+        for a in range(1, 31):
             if(is_pythagorean(a,b,c)):
                 print(f"({a},\t{b},\t{c})")
                 n += 1
