@@ -46,7 +46,7 @@ age1=int(input("Enter your age : "))
 if(age1>=18):
     print("Your are eligible for voting")
     print("You can also drive")
-elif(age1>=10 and age<18):
+elif(age1>=10 and age1<18):
     print("You are a child, wait for a few years\n")
 else:
     print("You are really small to even apply for license")
