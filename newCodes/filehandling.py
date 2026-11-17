@@ -59,3 +59,35 @@ print("Valid marks : ",correct)
 
 
 
+
+
+
+
+
+
+
+
+# while True:
+#     try:
+#         number = int(input("Enter a number : "))
+#         break
+#     except:
+#         print("Brother you entered, wrong number, try again")
+
+# print("bye bye, see you soon")
+
+
+
+
+
+# x = 5     
+# try:
+#     z = calculator('div', 4, x)
+#     y = 2 * z
+#     f = open('missing-file.txt', 'r')
+#     print(f.read())
+# except ZeroDivisionError:
+#     print("Do not ask me to divide by 0 please.")
+# except FileNotFoundError:
+#     print("File not found")
+# print("Finished!")
