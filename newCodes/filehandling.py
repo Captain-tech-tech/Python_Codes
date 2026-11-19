@@ -137,3 +137,13 @@ print("Valid marks : ",correct)
 
 
 
+
+######################## moving cursor to beginning
+# Moves cursor.
+# file.seek(0)
+# Moves to beginning.
+
+##################### for checking if file exists
+# import os
+# print(os.path.exists("data.txt"))
+
