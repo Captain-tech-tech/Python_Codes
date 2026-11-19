@@ -113,3 +113,27 @@ print("Valid marks : ",correct)
 # data=f.read()
 # print(data)
 # f.close()
+
+
+
+
+
+################################### readlines()
+# Reads all lines.
+# Returns them as a list.
+# Each line is a separate string (usually ending with \n, except possibly the last line).
+# Use readlines() when you need all lines stored individually in a list, such as for looping or indexing.
+
+################################ readline() concept 
+# Reads only one line.
+# Stops when it reaches a newline (\n).
+# Moves the cursor to the beginning of the next line.
+
+
+############################## showing cursor position
+# print(file.tell())
+# Example:
+# 6
+
+
+
