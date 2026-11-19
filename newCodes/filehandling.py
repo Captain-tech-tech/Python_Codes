@@ -91,3 +91,25 @@ print("Valid marks : ",correct)
 # except FileNotFoundError:
 #     print("File not found")
 # print("Finished!")
+
+
+
+
+# import os
+# os.remove("/home/atif/different_languages_codes/generalpracticeoncodes/hello.txt")
+
+# f=open("hello.txt","w")
+# f.write("What are you doing here, are you gonna come to peshawar next month")
+# f.close()
+
+
+# f=open("hello.txt","a")
+# f.write("\nWhat the heck are you doing here, are you out of your mind")
+####    writelines()     for writing multiple lines at once
+
+# f.close()
+
+# f=open("hello.txt",'r')
+# data=f.read()
+# print(data)
+# f.close()
