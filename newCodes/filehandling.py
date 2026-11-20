@@ -147,3 +147,22 @@ print("Valid marks : ",correct)
 # import os
 # print(os.path.exists("data.txt"))
 
+
+
+
+
+###############  encoding="utf-8"
+# encoding="utf-8"
+# This tells Python:
+# "Use UTF-8 rules to convert the file's bytes into readable text."
+
+# Read all bytes from the file.
+# Decode them using UTF-8.
+# Display readable text.
+# if even your file contain emoji or other language words other than english, it will display it correctly
+
+##
+# with open("data.txt", "w", encoding="utf-8") as file:
+#     file.write("پاکستان ❤️ ")       # this is an important use of utf-8 encoding
+# with open("data.txt", "r", encoding="utf-8") as f:
+#     print(f.read())
